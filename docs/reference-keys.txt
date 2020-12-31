@@ -1,0 +1,10 @@
+about
+software-projects
+semnova-r-package
+subgroupsem-r-package
+vitae
+contact-information
+research-interests
+education-background
+honors-grants
+publications
