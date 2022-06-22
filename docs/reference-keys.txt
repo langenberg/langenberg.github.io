@@ -4,7 +4,7 @@ contact-information
 research-interests
 education-background
 funded-research-grants
-honors-grants
+scholarships-and-awards
 publications
 software-projects
 semnova-r-package
