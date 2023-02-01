@@ -7,5 +7,7 @@ funded-research-grants
 scholarships-and-awards
 publications
 software-projects
-semnova-r-package
-subgroupsem-r-package
+semnova
+subgroupsem
+poweranova
+sccm

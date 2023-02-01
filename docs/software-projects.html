@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>4 Software Projects | Hi there!</title>
   <meta name="description" content="Hello!" />
-  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.31 and GitBook 2.6.7" />
 
   <meta property="og:title" content="4 Software Projects | Hi there!" />
   <meta property="og:type" content="book" />
@@ -23,7 +23,7 @@
 <meta name="author" content="Benedikt Langenberg" />
 
 
-<meta name="date" content="2022-06-22" />
+<meta name="date" content="2023-02-01" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -84,8 +84,10 @@
 <li class="chapter" data-level="3" data-path="publications.html"><a href="publications.html"><i class="fa fa-check"></i><b>3</b> Publications</a></li>
 <li class="chapter" data-level="4" data-path="software-projects.html"><a href="software-projects.html"><i class="fa fa-check"></i><b>4</b> Software Projects</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="software-projects.html"><a href="software-projects.html#semnova-r-package"><i class="fa fa-check"></i><b>4.1</b> <code>semnova</code> (R package)</a></li>
-<li class="chapter" data-level="4.2" data-path="software-projects.html"><a href="software-projects.html#subgroupsem-r-package"><i class="fa fa-check"></i><b>4.2</b> <code>subgroupsem</code> (R package)</a></li>
+<li class="chapter" data-level="4.1" data-path="software-projects.html"><a href="software-projects.html#semnova"><i class="fa fa-check"></i><b>4.1</b> <code>semnova</code></a></li>
+<li class="chapter" data-level="4.2" data-path="software-projects.html"><a href="software-projects.html#subgroupsem"><i class="fa fa-check"></i><b>4.2</b> <code>subgroupsem</code></a></li>
+<li class="chapter" data-level="4.3" data-path="software-projects.html"><a href="software-projects.html#poweranova"><i class="fa fa-check"></i><b>4.3</b> <code>powerANOVA</code></a></li>
+<li class="chapter" data-level="4.4" data-path="software-projects.html"><a href="software-projects.html#sccm"><i class="fa fa-check"></i><b>4.4</b> <code>sccm</code></a></li>
 </ul></li>
 </ul>
 
@@ -106,22 +108,40 @@
             <section class="normal" id="section-">
 <div id="software-projects" class="section level1 hasAnchor" number="4">
 <h1><span class="header-section-number">4</span> Software Projects<a href="software-projects.html#software-projects" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div id="semnova-r-package" class="section level2 hasAnchor" number="4.1">
-<h2><span class="header-section-number">4.1</span> <code>semnova</code> (R package)<a href="software-projects.html#semnova-r-package" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="semnova" class="section level2 hasAnchor" number="4.1">
+<h2><span class="header-section-number">4.1</span> <code>semnova</code><a href="software-projects.html#semnova" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p><code>semnova</code> is an <code>R</code> package for analyzing data from repeated measures experimental designs. <code>semnova</code> implements latent repeated measures analysis of variance (RM-ANOVA) which is a structural equation modeling based alternative to tradtional RM-ANOVA. <em>Traditional</em> RM-ANOVA is a widely used statistical tool in the field of psychology and social sciences. RM-ANOVA can analyze data such as test scores, questionnaire items, reaction times, attitudes, characteristics, or motives. Oftentimes, the construct of interest cannot be observed directly and the aforementioned measures contain measurement errors. <em>Latent</em> RM-ANOVA can include multiple indicators that measure the same latent construct of and prune of measurement error. <em>Latent</em> RM-ANOVA can furthermore be used to examine interindividual differences in main and interaction effects of experimental factors and introduces a whole lot of other advantages from the structural equation modeling framework.</p>
 <p>Check out:</p>
 <ul>
-<li>the <a href="https://langenberg.github.io/semnova-man">manual</a> and a brief tutorial</li>
-<li>my journal <a href="https://doi.org/10.1080/00273171.2020.1803038">article</a> about latent RM-ANOVA</li>
+<li>the <a href="https://langenberg.github.io/semnova-man">manual</a> for a brief tutorial</li>
+<li>the <a href="https://doi.org/10.1080/00273171.2020.1803038">article</a> about latent repeated measures ANOVA</li>
 </ul>
 </div>
-<div id="subgroupsem-r-package" class="section level2 hasAnchor" number="4.2">
-<h2><span class="header-section-number">4.2</span> <code>subgroupsem</code> (R package)<a href="software-projects.html#subgroupsem-r-package" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="subgroupsem" class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> <code>subgroupsem</code><a href="software-projects.html#subgroupsem" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p><code>subgroupsem</code> is an <code>R</code> package for mining exceptional models. Althoug the package was originally developed for mining structural equation models, it can be used with any kind of statitical model and external packages as it optimizes a user-defined function. Given a dataset and a set of covariates or group variables, <code>subgroupsem</code> uses algorithms from the data mining framework to find exceptional sub-samples with respect to the user-defined criterion. <code>subgroupsem</code> itself is only a wrapper for the python module <a href="https://pypi.org/project/pysubgroup/"><code>pysubgroup</code></a> authored by <a href="http://florian.lemmerich.net">Dr. Florian Lemmerich</a> and makes use of the <a href="https://rstudio.github.io/reticulate/"><code>reticulate</code></a> package to interface <code>R</code> with <code>pysubgroup</code>. Together with Dr. Lemmerich, we demonstrated how to use model mining alogorithms to structural eqaution models. Check out the corresponding article below.</p>
 <p>Check out:</p>
 <ul>
-<li>the <a href="https://github.com/langenberg/subgroupsem">manual</a> and a brief tutorial</li>
-<li>the <a href="https://doi.org/10.31234/osf.io/c6qv4">article</a> about model mining with structural equation models</li>
+<li>the <a href="https://github.com/langenberg/subgroupsem">manual</a> for a brief tutorial</li>
+<li>the <a href="https://doi.org/10.1037/met0000524">article</a> about subgroup discovery in structural equation models</li>
+</ul>
+</div>
+<div id="poweranova" class="section level2 hasAnchor" number="4.3">
+<h2><span class="header-section-number">4.3</span> <code>powerANOVA</code><a href="software-projects.html#poweranova" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><code>powerANOVA</code> is an <code>R</code> package intended as a companion to the article “A tutorial on using the paired t-test for power calculations in repeated measures ANOVA with interactions”.</p>
+<p>Check out:</p>
+<ul>
+<li>the <a href="https://github.com/langenberg/powerANOVA">manual</a> for a brief tutorial</li>
+<li>the <a href="https://doi.org/10.3758/s13428-022-01902-8">article</a></li>
+</ul>
+</div>
+<div id="sccm" class="section level2 hasAnchor" number="4.4">
+<h2><span class="header-section-number">4.4</span> <code>sccm</code><a href="software-projects.html#sccm" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><code>sccm</code> is an <code>R</code> package intended as a companion to the article “Estimating and testing causal mediation effects in single-case experimental designs using state-space modeling”.</p>
+<p>Check out:</p>
+<ul>
+<li>the <a href="https://github.com/langenberg/sccm">manual</a> for a brief tutorial</li>
+<li>the <a href="https://doi.org/10.1177/01632787211067533">article</a></li>
 </ul>
 
 </div>
