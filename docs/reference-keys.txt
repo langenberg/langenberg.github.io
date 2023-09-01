@@ -2,6 +2,7 @@ about
 vitae
 contact-information
 research-interests
+academic-positions
 education-background
 funded-research-grants
 scholarships-and-awards
